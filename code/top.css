@@ -1,0 +1,392 @@
+/* 全体 */
+@font-face {
+  font-family: "Harenosora";
+  src: url("../font/hare/Harenosora.otf") format("opentype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Harenosora", sans-serif;
+}
+
+/* ヘッダー */
+.header {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: auto;
+  height: 147px;
+}
+
+.hamburger-menu-wrapper {
+  margin-right: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* 三本線 */
+.hamburger-menu span {
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #0f54a0;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* ナビゲーションメニュー */
+.menu {
+  display: none;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  min-width: 350px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 24px;
+}
+
+.menu li {
+  border-bottom: 1px solid #eee;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background-color: #0f54a0;
+  color: #fff;
+}
+
+/* メニュー表示時 */
+.menu.is-active {
+  display: block;
+}
+
+/* アニメーション設定 */
+.hamburger-menu span {
+  transition: all 0.3s ease;
+}
+
+/* 1本目の線 */
+.hamburger-menu.is-active span:nth-child(1) {
+  transform: translateY(40px) rotate(45deg);
+}
+
+/* 2本目の線 */
+.hamburger-menu.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+/* 3本目の線 */
+.hamburger-menu.is-active span:nth-child(3) {
+  transform: translateY(-40px) rotate(-45deg);
+}
+
+/* heroセクション */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-overlay {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  font-size: 42px;
+  color: #fff;
+}
+
+/* flowセクション */
+.flow {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+.flow_contents {
+  width: 980px;
+  height: 700px;
+  position: relative;
+}
+/* 上の線 */
+.flow_contents::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 640px;
+  height: 1px;
+  background-color: #000000;
+}
+/* 下の線 */
+.flow_contents::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 640px;
+  height: 1px;
+  background-color: #000000;
+}
+/* 右の線 */
+.border-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 210px;
+  background-color: #000000;
+}
+/* 左の線 */
+.border-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 210px;
+  background-color: #000000;
+}
+.flow_border {
+  position: absolute;
+  top: 348px;
+  left: -111px;
+  width: 1203.51px;
+  height: 2px;
+  background-color: #0f54a0;
+  transform: rotate(35.57deg);
+}
+.flow_arrow {
+  position: absolute;
+  top: 209px;
+  left: 305.5px;
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid #0f54a0;
+  transform-origin: right center;
+}
+.flow_arrow::after {
+  content: "";
+  position: absolute;
+  top: 244px;
+  left: 329px;
+  width: 0;
+  height: 0;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom: 25px solid #0f54a0;
+}
+.flow_title_EN {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 64px;
+  color: #000;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.flow_title_JP {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 64px;
+  color: #000;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.flow_cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.flow_card {
+  width: 300px;
+  height: 450px;
+  border: 1px solid #0f54a0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.card_image {
+  width: 190px;
+  height: 190px;
+}
+.flow_card:nth-child(1) {
+  margin-top: 0px;
+}
+.flow_card:nth-child(2) {
+  margin-top: 124px;
+}
+.flow_card:nth-child(3) {
+  margin-top: 248px;
+}
+.cta_contact {
+  width: 400px;
+  height: 150px;
+  border: 1px solid #0f54a0;
+  position: relative;
+}
+.letter_border_left {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 206.16px;
+  height: 1px;
+  background-color: #0f54a0;
+  transform: rotate(-165.96deg);
+}
+.letter_border_right {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 206.16px;
+  height: 1px;
+  background-color: #0f54a0;
+  transform: rotate(165.96deg);
+}
+.cta_conttact_text {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  color: #0f54a0;
+}
+
+/* reasonセクション */
+.reason {
+  width: 100%;
+  height: auto;
+  margin-top: -1px;
+  margin-bottom: -1px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #0f54a0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.reason_title_wrapper {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reason_title_border {
+  width: 21px;
+  height: 1px;
+  background-color: #ffffff;
+}
+.reason_title {
+  font-size: 48px;
+  margin-top: -18px;
+  color: #ffffff;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.reason_cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.reason_card {
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ffffff;
+  background-color: #103e72;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.reason_card_title_NO {
+  font-size: 36px;
+  color: #ffffff;
+}
+.reason_card_title {
+  margin-top: -20px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  color: #ffffff;
+}
+.reason_card_image {
+  width: 190px;
+  height: 190px;
+  background-color: #ffffff;
+}
+.reason_card_text {
+  width: 280px;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
+}
+/* jointセクション */
+.joint {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(to top, #0f54a0, #ffffff);
+}
+.joint_reverse {
+  width: 100%;
+  height: 90px;
+  background: linear-gradient(to bottom, #0f54a0, #ffffff);
+}
