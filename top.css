@@ -1,7 +1,7 @@
 /* 全体 */
 @font-face {
   font-family: "Harenosora";
-  src: url("../font/hare/Harenosora.otf") format("opentype");
+  src: url("./font/hare/Harenosora.otf") format("opentype");
 }
 * {
   margin: 0;
