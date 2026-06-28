@@ -565,6 +565,7 @@ html {
 .price_table {
   margin: auto;
   text-align: center;
+  font-size: 10%; /* 古いブラウザ用 */
   font-size: clamp(1px, 2.8vw, 32px);
   color: #ffffff;
   border-collapse: collapse;
