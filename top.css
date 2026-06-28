@@ -84,7 +84,7 @@
   padding: 12px 16px;
   color: #333;
   text-decoration: none;
-  font-size: clamp(16px, 2vw, 32px);
+  font-size: clamp(1px, 2.5vw, 32px);
 }
 
 .menu a:hover {
@@ -132,9 +132,9 @@
 }
 .hero-overlay {
   position: absolute;
-  top: 50px;
-  left: 50px;
-  font-size: clamp(24px, 4vw, 42px);
+  top: 5vw;
+  left: 5vw;
+  font-size: clamp(10px, 4vw, 42px);
   color: #fff;
 }
 
@@ -142,12 +142,12 @@
 .flow {
   width: 100%;
   height: auto;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 9.2vw;
+  padding-bottom: 9.2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 5vw;
 }
 .flow_contents {
   width: 90vw;
@@ -227,7 +227,7 @@
   position: absolute;
   top: 0;
   right: 10px;
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(1px, 5vw, 64px);
   color: #000;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -235,7 +235,7 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: clamp(32px, 5vw, 64px);
+  font-size: clamp(1px, 5vw, 64px);
   color: #000;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -245,7 +245,7 @@
   left: 0;
   display: flex;
   justify-content: space-between;
-  gap: 40px;
+  gap: 3.8vw;
 }
 .flow_card {
   width: 27.5vw;
@@ -258,6 +258,12 @@
   font-size: clamp(16px, 1.9vw, 32px);
   padding-left: 15px;
   padding-right: 15px;
+}
+.card_contents {
+  display: block;
+  text-align: center;
+  width: 27.5vw;
+  font-size: clamp(1px, 2vw, 32px);
 }
 .card_image {
   width: 20vw;
@@ -273,25 +279,25 @@
   margin-top: 24vw;
 }
 .cta_contact {
-  width: 400px;
-  height: 150px;
+  width: 40vw;
+  height: 15vw;
   border: 1px solid #0f54a0;
   position: relative;
 }
 .letter_border_left {
   position: absolute;
-  top: 25px;
+  top: 20%;
   left: 0;
-  width: 206.16px;
+  width: 52%;
   height: 1px;
   background-color: #0f54a0;
   transform: rotate(-165.96deg);
 }
 .letter_border_right {
   position: absolute;
-  top: 25px;
+  top: 20%;
   right: 0;
-  width: 206.16px;
+  width: 52%;
   height: 1px;
   background-color: #0f54a0;
   transform: rotate(165.96deg);
@@ -304,7 +310,7 @@
   width: 100%;
   top: 65%;
   transform: translate(-50%, -50%);
-  font-size: 32px;
+  font-size: clamp(1px, 2.9vw, 32px);
   color: #0f54a0;
 }
 
@@ -314,80 +320,80 @@
   height: auto;
   margin-top: -1px;
   margin-bottom: -1px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 9.2vw;
+  padding-bottom: 9.2vw;
   background-color: #0f54a0 !important;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 5vw;
 }
 .reason_title_wrapper {
   width: 100%;
-  height: 72px;
+  height: 6.6vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .reason_title_border {
-  width: 21px;
+  width: 1.9vw;
   height: 1px;
   background-color: #ffffff !important;
 }
 .reason_title {
-  font-size: 48px;
-  margin-top: -18px;
+  font-size: clamp(1px, 4vw, 32px);
+  margin-top: -1.6vw;
   color: #ffffff !important;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 4.6vw;
+  margin-right: 4.6vw;
 }
 .reason_cards {
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 3.7vw;
 }
 .reason_card {
-  width: 300px;
-  height: 500px;
+  width: 27.5vw;
+  height: 40vw;
   border: 1px solid #ffffff !important;
   background-color: #103e72;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.8vw;
 }
 .reason_card_title_NO {
-  font-size: 36px;
+  font-size: clamp(1px, 3vw, 32px);
   color: #ffffff !important;
 }
 .reason_card_title {
-  margin-top: -20px;
+  margin-top: -1.8vw;
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 32px;
+  font-size: clamp(1px, 3vw, 32px);
   color: #ffffff !important;
 }
 .reason_card_image {
-  width: 190px;
-  height: 190px;
+  width: 15vw;
+  height: auto;
   background-color: #ffffff !important;
 }
 .reason_card_text {
-  width: 280px;
+  width: 25vw;
   text-align: center;
-  font-size: 24px;
+  font-size: clamp(1px, 1.8vw, 32px);
   color: #ffffff !important;
 }
 /* jointセクション */
 .joint {
   width: 100%;
-  height: 90px;
+  height: 10vw;
   background: linear-gradient(to top, #0f54a0, #ffffff);
 }
 .joint_reverse {
   width: 100%;
-  height: 90px;
+  height: 10vw;
   background: linear-gradient(to bottom, #0f54a0, #ffffff);
 }
