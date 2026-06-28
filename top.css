@@ -550,7 +550,7 @@ html {
 .price_contents_title_text {
   display: block;
   margin-top: -1.3vw;
-  font-size: clamp(1px, 4vw, 32px);
+  font-size: clamp(1px, 3.8vw, 32px);
   color: #ffffff;
 }
 .price_contents_title_boder {
@@ -558,7 +558,16 @@ html {
   display: block;
   bottom: 0;
   left: 0;
-  width: 35vw;
+  width: 33vw;
+  height: 1px;
+  background-color: #ffffff;
+}
+.price_contents_title_boder_sp {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 44vw;
   height: 1px;
   background-color: #ffffff;
 }
@@ -582,6 +591,77 @@ html {
 }
 .price_table td:last-child {
   border-right: none;
+}
+.price_table_alert {
+  margin-left: 1.5vw;
+  font-size: clamp(1px, 2.5vw, 32px);
+  color: #ffffff;
+}
+.goto_option {
+  margin: auto;
+  width: 37vw;
+  height: 6.9vw;
+  background-color: #103e72;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: clamp(1px, 2.8vw, 32px);
+}
+.price_contents_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.price_contents_public {
+  flex: 1;
+}
+.price_contents_domain {
+  flex: 1;
+}
+.price_contents_text {
+  margin-left: 6.5vw;
+  color: #ffffff;
+}
+.text_size_h3 {
+  font-size: clamp(1px, 3.8vw, 32px);
+}
+.text_size_p {
+  font-size: clamp(1px, 3.5vw, 32px);
+}
+.cta_contact_white {
+  margin: auto;
+  width: 40vw;
+  height: 15vw;
+  border: 1px solid #ffffff;
+  background-color: #103e72;
+  position: relative;
+}
+.letter_border_left_white {
+  position: absolute;
+  top: 17%;
+  left: -1%;
+  width: 52%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: rotate(-165.96deg);
+}
+.letter_border_right_white {
+  position: absolute;
+  top: 17%;
+  right: -1%;
+  width: 52%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: rotate(165.96deg);
+}
+.cta_contact_text_white {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1px, 2.9vw, 32px);
+  color: #ffffff;
 }
 /* jointセクション */
 .joint {
