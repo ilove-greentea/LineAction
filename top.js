@@ -9,3 +9,13 @@ hamburgerButton.addEventListener("click", () => {
   hamburgerButton.classList.toggle("is-active");
   menu.classList.toggle("is-active");
 });
+// メニュー内リンクを踏んだら閉じる
+const menuLinks = document.querySelectorAll(".menu a");
+
+menuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    hamburgerButton.classList.remove("is-active");
+    menu.classList.remove("is-active");
+    hamburgerButton.setAttribute("aria-expanded", "false");
+  });
+});
