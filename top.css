@@ -197,31 +197,31 @@
   top: 31.7vw;
   left: -10.2vw;
   width: 110vw;
-  height: 2px;
+  height: 1px;
   background-color: #0f54a0 !important;
   transform: rotate(35.5deg);
 }
 .flow_arrow {
   position: absolute;
-  top: 209px;
-  left: 305.5px;
+  top: 19.3vw;
+  left: 28.2vw;
   width: 0;
   height: 0;
-  border-left: 12.5px solid transparent;
-  border-right: 12.5px solid transparent;
-  border-bottom: 25px solid #0f54a0 !important;
+  border-left: 1.1vw solid transparent;
+  border-right: 1.1vw solid transparent;
+  border-bottom: 2.2vw solid #0f54a0 !important;
   transform-origin: right center;
 }
 .flow_arrow::after {
   content: "";
   position: absolute;
-  top: 244px;
-  left: 329px;
+  top: 22.5vw;
+  left: 30.4vw;
   width: 0;
   height: 0;
-  border-left: 12.5px solid transparent;
-  border-right: 12.5px solid transparent;
-  border-bottom: 25px solid #0f54a0 !important;
+  border-left: 1.1vw solid transparent;
+  border-right: 1.1vw solid transparent;
+  border-bottom: 2.2vw solid #0f54a0 !important;
 }
 .flow_title_EN {
   position: absolute;
@@ -286,8 +286,8 @@
 }
 .letter_border_left {
   position: absolute;
-  top: 20%;
-  left: 0;
+  top: 17%;
+  left: -1%;
   width: 52%;
   height: 1px;
   background-color: #0f54a0;
@@ -295,8 +295,8 @@
 }
 .letter_border_right {
   position: absolute;
-  top: 20%;
-  right: 0;
+  top: 17%;
+  right: -1%;
   width: 52%;
   height: 1px;
   background-color: #0f54a0;
