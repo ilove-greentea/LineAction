@@ -486,9 +486,9 @@
   font-size: clamp(1px, 2vw, 32px);
 }
 .achievements_img {
-  position: absolute;
-  width: 100%;
+  width: 27.5vw;
   height: auto;
+  display: block;
 }
 .achievements_card:nth-child(1) {
   margin-top: 0px;
