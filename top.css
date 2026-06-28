@@ -168,7 +168,7 @@
 .flow_contents::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: 1vw;
   left: 0;
   width: 59vw;
   height: 1px;
@@ -186,7 +186,7 @@
 /* 左の線 */
 .border-left {
   position: absolute;
-  bottom: 0;
+  bottom: 1vw;
   left: 0;
   width: 1px;
   height: 20vw;
@@ -229,7 +229,7 @@
   right: 10px;
   font-size: clamp(1px, 5vw, 64px);
   color: #000;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.46vw 0.46vw 0.46vw rgba(0, 0, 0, 0.5);
 }
 .flow_title_JP {
   position: absolute;
@@ -237,7 +237,7 @@
   left: 10px;
   font-size: clamp(1px, 5vw, 64px);
   color: #000;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0.46vw 0.46vw 0.46vw rgba(0, 0, 0, 0.5);
 }
 .flow_cards {
   position: absolute;
@@ -385,6 +385,119 @@
   text-align: center;
   font-size: clamp(1px, 1.8vw, 32px);
   color: #ffffff !important;
+}
+
+/* achievementsセクション */
+.achievements {
+  width: 100%;
+  height: auto;
+  padding-top: 9.2vw;
+  padding-bottom: 9.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+}
+.achievements_contents {
+  width: 90vw;
+  height: 65vw;
+  position: relative;
+}
+/* 上の線 */
+.achievements_contents::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 59vw;
+  height: 1px;
+  background-color: #000000;
+}
+/* 下の線 */
+.achievements_contents::after {
+  content: "";
+  position: absolute;
+  bottom: 1vw;
+  left: 0;
+  width: 59vw;
+  height: 1px;
+  background-color: #000000;
+}
+/* 右の線 */
+.border-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 20vw;
+  background-color: #000000;
+}
+/* 左の線 */
+.border-left {
+  position: absolute;
+  bottom: 1vw;
+  left: 0;
+  width: 1px;
+  height: 20vw;
+  background-color: #000000;
+}
+.achievements_title_EN {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: clamp(1px, 5vw, 64px);
+  color: #000;
+  text-shadow: 0.46vw 0.46vw 0.46vw rgba(0, 0, 0, 0.5);
+}
+.achievements_title_JP {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: clamp(1px, 5vw, 64px);
+  color: #000;
+  text-shadow: 0.46vw 0.46vw 0.46vw rgba(0, 0, 0, 0.5);
+}
+.achievements_cards {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 3.8vw;
+}
+.achievements_card {
+  width: 27.5vw;
+  height: 40vw;
+  border: 1px solid #0f54a0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(16px, 1.9vw, 32px);
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.card_contents {
+  display: block;
+  text-align: center;
+  width: 27.5vw;
+  font-size: clamp(1px, 2vw, 32px);
+}
+.achievements_img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+.achievements_card:nth-child(1) {
+  margin-top: 0px;
+}
+.achievements_card:nth-child(2) {
+  margin-top: 12vw;
+}
+.achievements_card:nth-child(3) {
+  margin-top: 24vw;
 }
 /* jointセクション */
 .joint {
