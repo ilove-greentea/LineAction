@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #ffffff !important;
 }
 .logo {
   width: auto;
@@ -58,8 +59,8 @@
   top: 200px;
   right: 0;
   min-width: 350px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
@@ -72,7 +73,7 @@
 }
 
 .menu li {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eee !important;
 }
 
 .menu li:last-child {
@@ -88,7 +89,7 @@
 
 .menu a:hover {
   background-color: #0f54a0;
-  color: #fff;
+  color: #fff !important;
 }
 
 /* メニュー表示時 */
@@ -197,7 +198,7 @@
   left: -111px;
   width: 1203.51px;
   height: 2px;
-  background-color: #0f54a0;
+  background-color: #0f54a0 !important;
   transform: rotate(35.57deg);
 }
 .flow_arrow {
@@ -208,7 +209,7 @@
   height: 0;
   border-left: 12.5px solid transparent;
   border-right: 12.5px solid transparent;
-  border-bottom: 25px solid #0f54a0;
+  border-bottom: 25px solid #0f54a0 !important;
   transform-origin: right center;
 }
 .flow_arrow::after {
@@ -220,7 +221,7 @@
   height: 0;
   border-left: 12.5px solid transparent;
   border-right: 12.5px solid transparent;
-  border-bottom: 25px solid #0f54a0;
+  border-bottom: 25px solid #0f54a0 !important;
 }
 .flow_title_EN {
   position: absolute;
@@ -295,7 +296,7 @@
   background-color: #0f54a0;
   transform: rotate(165.96deg);
 }
-.cta_conttact_text {
+.cta_contact_text {
   position: absolute;
   display: block;
   text-align: center;
@@ -315,7 +316,7 @@
   margin-bottom: -1px;
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: #0f54a0;
+  background-color: #0f54a0 !important;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -330,12 +331,12 @@
 .reason_title_border {
   width: 21px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .reason_title {
   font-size: 48px;
   margin-top: -18px;
-  color: #ffffff;
+  color: #ffffff !important;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -349,7 +350,7 @@
 .reason_card {
   width: 300px;
   height: 500px;
-  border: 1px solid #ffffff;
+  border: 1px solid #ffffff !important;
   background-color: #103e72;
   display: flex;
   flex-direction: column;
@@ -358,7 +359,7 @@
 }
 .reason_card_title_NO {
   font-size: 36px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .reason_card_title {
   margin-top: -20px;
@@ -366,18 +367,18 @@
   width: 100%;
   text-align: center;
   font-size: 32px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 .reason_card_image {
   width: 190px;
   height: 190px;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .reason_card_text {
   width: 280px;
   text-align: center;
   font-size: 24px;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 /* jointセクション */
 .joint {
