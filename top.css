@@ -281,7 +281,8 @@ html {
 .flow_card:nth-child(3) {
   margin-top: 24vw;
 }
-.cta_contact {
+.cta_contact,
+.output {
   width: 40vw;
   height: 15vw;
   border: 1px solid #0f54a0;
