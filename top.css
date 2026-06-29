@@ -281,8 +281,7 @@ html {
 .flow_card:nth-child(3) {
   margin-top: 24vw;
 }
-.cta_contact,
-.output {
+.cta_contact {
   width: 40vw;
   height: 15vw;
   border: 1px solid #0f54a0;
@@ -717,17 +716,56 @@ html {
 }
 .single_input {
   margin-top: 0.4vw;
+  padding-left: 1.85vw;
+  padding-right: 1.85vw;
   width: 46.2vw;
   height: 4.62vw;
   font-size: clamp(1px, 2.9vw, 32px);
   border: 1px solid #0f54a0;
 }
 .multiple_input {
+  padding-left: 1.85vw;
+  padding-right: 1.85vw;
   margin-top: 1.5vw;
   width: 46.2vw;
   height: 46.2vw;
   font-size: clamp(1px, 2.9vw, 32px);
   border: 1px solid #0f54a0;
+}
+.output {
+  width: 40vw;
+  height: 15vw;
+  border: 1px solid #0f54a0;
+  position: relative;
+}
+.letter_border_left {
+  position: absolute;
+  top: 17%;
+  left: -1%;
+  width: 52%;
+  height: 1px;
+  background-color: #0f54a0;
+  transform: rotate(-165.96deg);
+}
+.letter_border_right {
+  position: absolute;
+  top: 17%;
+  right: -1%;
+  width: 52%;
+  height: 1px;
+  background-color: #0f54a0;
+  transform: rotate(165.96deg);
+}
+.cta_contact_text {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1px, 2.9vw, 32px);
+  color: #0f54a0;
 }
 /* jointクション */
 .joint {
