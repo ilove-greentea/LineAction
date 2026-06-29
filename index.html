@@ -34,7 +34,7 @@
             <li><a href="#reason">お安くできるの3つの理由</a></li>
             <li><a href="#achievements">実績</a></li>
             <li><a href="#price">料金</a></li>
-            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
           </ul>
         </nav>
       </div>
@@ -224,7 +224,7 @@
             </tr>
           </table>
           <p class="price_table_alert">
-            ○・・・対応可　△・・・軽微対応可　-・・・対応不可
+            ○・・・対応可　△・・・軽微対応可　ー・・・対応不可
           </p>
         </div>
         <button class="goto_option">オプションを見る</button>
@@ -263,6 +263,56 @@
         </bottom>
       </section>
       <section class="joint_reverse"></section>
+      <section class="contact" id="contact">
+        <div class="contact_title_wrapper">
+          <div class="contact_title_border"></div>
+          <p class="contact_title">お問合せ</p>
+          <div class="contact_title_border"></div>
+        </div>
+        <div class="contact_contents">
+          <table class="contact_table">
+            <tr>
+              <td class="contact_table_headline">お名前</td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="山田　太郎"
+                  class="single_input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact_table_headline">
+                ご連絡先<br />(メールアドレス)
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="mailaddress"
+                  placeholder="tarou_yamada@gmail.com"
+                  class="single_input"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td class="contact_table_headline">ご相談内容</td>
+              <td>
+                <textarea
+                  name="content"
+                  placeholder="・TOPページ&#10;・サービス紹介ページ&#10;・料金紹介ページ&#10;・お問合せページ&#10;の計4ページでLPの作成をご依頼する場合のお見積りはどのくらいになりますか？&#10;など"
+                  class="multiple_input"
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <bottom class="output">
+          <div class="letter_border_left"></div>
+          <div class="letter_border_right"></div>
+          <p class="cta_contact_text">上記の内容で相談する</p>
+        </bottom>
+      </section>
     </main>
   </body>
 </html>

@@ -663,7 +663,72 @@ html {
   font-size: clamp(1px, 2.9vw, 32px);
   color: #ffffff;
 }
-/* jointセクション */
+
+/* contactセクション*/
+.contact {
+  width: 100%;
+  height: auto;
+  padding-top: 9.2vw;
+  padding-bottom: 9.2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vw;
+}
+.contact_title_wrapper {
+  width: 100%;
+  height: 6.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_title_border {
+  width: 18.8vw;
+  height: 1px;
+  background-color: #000000 !important;
+}
+.contact_title {
+  font-size: clamp(1px, 4vw, 32px);
+  margin-top: -1.6vw;
+  color: #000000 !important;
+  margin-left: 4.6vw;
+  margin-right: 4.6vw;
+}
+.contact_table {
+  font-size: clamp(1px, 2.9vw, 32px);
+  border-collapse: collapse;
+  width: 73.72vw;
+}
+.contact_table td:first-child {
+  width: 27.52vw; /* 左列の幅を固定して均等に */
+  text-align: justify; /* 均等割り付け */
+  text-align-last: justify; /* 最後の行も揃える */
+  vertical-align: middle; /* 通常は中央揃え */
+  line-height: 1.8;
+}
+.contact_table tr:last-child td:first-child {
+  vertical-align: top; /* ご相談内容だけ上付きに */
+}
+.contact_table_headline {
+  padding-right: 4.62vw;
+  width: 27.52vw;
+  height: 4.44vw;
+}
+.single_input {
+  margin-top: 0.4vw;
+  width: 46.2vw;
+  height: 4.62vw;
+  font-size: clamp(1px, 2.9vw, 32px);
+  border: 1px solid #0f54a0;
+}
+.multiple_input {
+  margin-top: 1.5vw;
+  width: 46.2vw;
+  height: 46.2vw;
+  font-size: clamp(1px, 2.9vw, 32px);
+  border: 1px solid #0f54a0;
+}
+/* jointクション */
 .joint {
   width: 100%;
   height: 10vw;
