@@ -316,6 +316,17 @@ html {
   font-size: clamp(1px, 2.9vw, 32px);
   color: #0f54a0;
 }
+.cta_contact_text_small {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1px, 1.8vw, 32px);
+  color: #0f54a0;
+}
 
 /* reasonセクション */
 .reason {
@@ -663,6 +674,17 @@ html {
   font-size: clamp(1px, 2.9vw, 32px);
   color: #ffffff;
 }
+.cta_contact_text_small_white {
+  position: absolute;
+  display: block;
+  text-align: center;
+  left: 50%;
+  width: 100%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1px, 1.8vw, 32px);
+  color: #ffffff;
+}
 
 /* contactセクション*/
 .contact {
@@ -777,4 +799,68 @@ html {
   width: 100%;
   height: 10vw;
   background: linear-gradient(to bottom, #0f54a0, #ffffff);
+}
+/* フッターセクション*/
+.footer {
+  width: 100%;
+  height: 18.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0f54a0 !important;
+}
+.logo {
+  width: auto;
+  height: 50%;
+}
+.goto_top {
+  margin-right: 4.62vw;
+  width: 9.25vw;
+  height: 9.25vw;
+  background-color: #103e72;
+  border: 1px solid #ffffff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fast_line {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  display: block;
+  width: 4.62vw;
+  height: 0.92vw;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+.fast_line_child {
+  position: absolute;
+  top: 30%;
+  right: 9%;
+  display: block;
+  width: 4.62vw;
+  height: 0.92vw;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+}
+.second_line {
+  position: absolute;
+  top: 60%;
+  left: 9%;
+  display: block;
+  width: 4.62vw;
+  height: 0.92vw;
+  background-color: #ffffff;
+  transform: rotate(-45deg);
+}
+.second_line_child {
+  position: absolute;
+  top: 60%;
+  right: 9%;
+  display: block;
+  width: 4.62vw;
+  height: 0.92vw;
+  background-color: #ffffff;
+  transform: rotate(45deg);
 }
