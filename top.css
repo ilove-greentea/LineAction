@@ -376,6 +376,7 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 1.8vw;
+  box-shadow: 0.46vw 0.46vw 0.46vw 0.46vw rgba(0, 0, 0, 0.5);
 }
 .reason_card_title_NO {
   font-size: clamp(1px, 3vw, 32px);
@@ -610,12 +611,15 @@ html {
 }
 .goto_option {
   margin: auto;
+  padding: 1vw;
   width: 37vw;
   height: 6.9vw;
   background-color: #103e72;
   border: 1px solid #ffffff;
   color: #ffffff;
   font-size: clamp(1px, 2.8vw, 32px);
+  text-align: center;
+  text-decoration: none;
 }
 .price_contents_wrapper {
   display: flex;
