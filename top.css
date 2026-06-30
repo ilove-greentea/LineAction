@@ -397,7 +397,7 @@ html {
 }
 .reason_card_text {
   width: 25vw;
-  text-align: center;
+  text-align: left;
   font-size: clamp(1px, 1.8vw, 32px);
   color: #ffffff !important;
 }
@@ -494,7 +494,20 @@ html {
   overflow: hidden;
   position: relative;
 }
+.card_contents_title {
+  display: block;
+  text-align: center;
+  width: 27.5vw;
+  font-size: clamp(1px, 2vw, 32px);
+}
 .card_contents {
+  display: block;
+  text-align: left;
+  width: 26vw;
+  font-size: clamp(1px, 2vw, 32px);
+}
+.card_contents_period {
+  margin-top: 2vw;
   display: block;
   text-align: center;
   width: 27.5vw;
@@ -586,8 +599,8 @@ html {
 .price_table {
   margin: auto;
   text-align: center;
-  font-size: 10%; /* 古いブラウザ用 */
-  font-size: clamp(1px, 2.8vw, 32px);
+  font-size: 8%; /* 古いブラウザ用 */
+  font-size: clamp(1px, 2.5vw, 32px);
   color: #ffffff;
   border-collapse: collapse;
 }
@@ -605,7 +618,9 @@ html {
   border-right: none;
 }
 .price_table_alert {
-  margin-left: 1.5vw;
+  display: block;
+  width: 100%;
+  text-align: center;
   font-size: clamp(1px, 2.5vw, 32px);
   color: #ffffff;
 }
